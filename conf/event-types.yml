@@ -1,0 +1,36 @@
+currents:
+  all_events:
+    - event1
+    - event2
+    - event3
+    - event4
+    - event5
+
+  http_destinations:
+    AMPLITUDE:
+      name: Amplitude
+
+      supports_app_associated_events: false
+      supports_anonymous_users: true
+
+      supports_factories: true
+
+      supported_events:
+        - event1
+        - event2
+        - event3
+        - event5
+
+    SEGMENT:
+      name: Segment
+
+      supports_app_associated_events: false
+      supports_anonymous_users: false
+
+      supports_factories: true
+
+      supported_events:
+        - event1
+        - event2
+        - event4
+        - event5

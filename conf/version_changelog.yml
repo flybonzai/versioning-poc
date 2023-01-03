@@ -1,0 +1,48 @@
+versions:
+  - v_1:
+      event_types:
+        AMPLITUDE:
+          - event3
+      fields:
+        AMPLITUDE:
+          - event3:
+              - field_a
+              - field_c
+        SEGMENT:
+          - event2:
+              - field_d
+  - v_2:
+      event_types:
+        SEGMENT:
+          - event4
+      fields:
+        AMPLITUDE:
+          event1:
+            - field_c
+          event3:
+            - field_c
+        SEGMENT:
+          event4:
+            - field_a
+            - field_b
+  - v_3:
+      event_types:
+        SEGMENT:
+          - event5
+        AMPLITUDE:
+          - event5
+      fields:
+        AMPLITUDE:
+          event5:
+            - field_a
+            - field_d
+          event2:
+            - field_d
+        SEGMENT:
+          event5:
+            - field_a
+            - field_b
+            - field_d
+          event4:
+            - field_c
+

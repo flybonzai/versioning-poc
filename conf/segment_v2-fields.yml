@@ -1,0 +1,9 @@
+fields:
+  shared:
+    - field_a
+    - field_b
+  event1:
+    - field_c
+  event2:
+    - field_d
+  event4: []

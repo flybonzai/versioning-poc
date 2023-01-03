@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currents</title>
+</head>
+<body>
+<h1>Muh Currents!</h1>
+
+<div>
+    <label for="destination">Destinations:
+        <select name="destination" id="destination">
+            <option value="amplitude">Amplitude</option>
+            <option value="segment">Segment</option>
+        </select>
+    </label>
+</div>
+<div>
+    <label for="schema_versions">Schema Version:
+        <select name="schema_versions" id="schema_versions">
+            {% for version in schema_versions %}
+                <option value="{{ version }}">{{ version }}</option>
+            {% endfor %}
+        </select>
+    </label>
+</div>
+</body>
+</html>
